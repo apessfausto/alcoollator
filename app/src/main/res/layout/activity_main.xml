@@ -59,7 +59,7 @@
             android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintVertical_bias="0.0"
             android:textStyle="bold" android:textAlignment="center"
-            android:text="NOTA: Para que o resultado seja mais preciso, é necessário que a temperatura do Mosto esteja à 20ºC durante a leitura da OG como na leitura @android:string/defaultMsisdnAlphaTag FG."
+            android:text="NOTA: Para que o resultado seja mais preciso, é necessário que a temperatura do Mosto esteja à 20ºC durante a leitura da OG como na leitura FG."
             android:textSize="18sp" android:textColor="#112233" android:textAllCaps="false"
     />
     <EditText

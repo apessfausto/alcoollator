@@ -28,6 +28,7 @@ class MainActivity : AppCompatActivity() {
 
         val abv = ((og - fg) * 131.25)*0.001
 
+
         txt_resultado.text = "ABV %.2f".format(abv) + "%"
     }
 
