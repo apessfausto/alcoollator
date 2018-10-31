@@ -51,17 +51,14 @@
             android:textSize="20sp" android:textAlignment="center" android:textStyle="bold"
             android:textColor="@android:color/black"/>
     <TextView
-            android:layout_width="358dp"
-            android:layout_height="88dp"
-            android:id="@+id/txt_obs" android:layout_marginTop="52dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_obs" android:layout_marginTop="28dp"
             app:layout_constraintTop_toBottomOf="@+id/txt_resultado" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.0"
             android:textStyle="bold" android:textAlignment="center"
-            android:text="NOTA: Para que o resultado seja mais preciso, é necessário que a temperatura do Mosto esteja à 20ºC durante a leitura da OG como na leitura FG."
             android:textSize="18sp" android:textColor="#112233" android:textAllCaps="false"
-    />
+            app:layout_constraintHorizontal_bias="0.0" android:text="@string/nota"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -70,8 +67,8 @@
             app:layout_constraintTop_toBottomOf="@+id/tw_og" android:layout_marginStart="8dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
             app:layout_constraintEnd_toEndOf="parent" android:inputType="number"
-            android:textAlignment="center" android:textStyle="bold" android:text="0"
-            android:textColor="#112233"/>
+            android:textAlignment="center" android:textStyle="bold"
+            android:textColor="#112233" android:hint="@string/og" android:text="0"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -81,7 +78,8 @@
             app:layout_constraintTop_toBottomOf="@+id/tw_fg" android:layout_marginEnd="8dp"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.503"
-            android:textAlignment="center" android:textStyle="bold" android:text="0" android:textColor="#112233"/>
+            android:textAlignment="center" android:textStyle="bold" android:textColor="#112233"
+            android:hint="@string/fg" android:text="0"/>
     <RadioGroup
             android:layout_width="358dp"
             android:layout_height="25dp"
@@ -89,6 +87,15 @@
             app:layout_constraintTop_toBottomOf="@+id/tx_fg" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp" android:id="@+id/radioGroup"/>
+    <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btnInstagram" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="48dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/txt_obs"
+            android:layout_marginBottom="6dp" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="1.0" android:background="@drawable/instagram"
+            app:layout_constraintVertical_bias="1.0"/>
 
 
 </android.support.constraint.ConstraintLayout>

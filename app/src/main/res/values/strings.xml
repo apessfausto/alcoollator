@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">Acoollator</string>
+    <string name="nota">NOTA: Para que o resultado seja mais preciso, é necessário que a temperatura do Mosto esteja à
+        20ºC durante a leitura da OG como na leitura FG.
+    </string>
+    <string name="og">Ex: 1048</string>
+    <string name="fg">Ex: 1012</string>
+    <string name="valOG">0</string>
+    <string name="valFG">0</string>
 
 </resources>
